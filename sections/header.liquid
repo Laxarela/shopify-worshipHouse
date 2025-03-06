@@ -130,6 +130,9 @@
       endif
     -%}
 
+     {% comment %}  testing the header-custom that we created {% endcomment %} 
+{% section 'custom-header-section' %}
+
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__heading">
